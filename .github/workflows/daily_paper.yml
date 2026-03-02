@@ -29,4 +29,5 @@ jobs:
       env:
         # 将 GitHub Secrets 中的密钥注入环境变量
         GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-      run: python main.py
+        PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
+      run: python daily_paper.py
